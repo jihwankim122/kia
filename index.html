@@ -127,6 +127,7 @@
             text-align: center;
             padding: 0px;
             position: relative;
+            bottom: 2px;
         }
         .dtn-black div{
             right: 120px;
@@ -140,10 +141,14 @@
             margin-bottom: 100px;
             margin-top: 25px;
         }
+        #etc .box img{
+            width:25px;
+        }
         #etc .box{
             padding: 15px;
             color: black;
             border: 0.1px solid rgb(219, 219, 219);
+            width: auto;
         }
         #etc .box:hover{
             background: black;
@@ -158,14 +163,39 @@
             color: white;
             padding-left: 150px;
             padding-top: 50px;
+            position: absolute;
+            right: 80px;
+            bottom: 30px;
         }
         #etc .box img:nth-child(1){display: inline;}
         #etc .box img:nth-child(2){display: none;}
         #news .col-sm-6{
             float: right;
+            height: 450px;
         }
         #news .col-sm-6:nth-child(2){
             background: #697278;
+        }
+        #news .col-sm-4 h4{
+            color: gray;
+        }
+        #news .col-sm-4{
+            padding: 50px;
+            padding-bottom: 150px;
+            font-weight: 800;
+        }
+        #news .col-sm-6 .box{
+            padding: 30px;
+            color: white;
+        }
+        #news .col-sm-6 .box h4{
+            font-size: x-large;
+        }
+        #news .col-sm-6 .box h5{
+            font-size: large;
+        }
+        #news .text-center{
+            margin-bottom: 40px;
         }
         #etc .box:hover img:nth-child(2){
             display: inline;
@@ -173,15 +203,29 @@
         #etc .box:hover img:nth-child(1){
             display: none;
         }
-        #news .col-sm-4{
-            padding: 50px;
-            padding-bottom: 150px;
-        }
         #footer1{
             background: #05141f;
         }
+        #footer1 .col-sm-3 {
+            margin-top: 25px;
+            margin-bottom: 40px;
+            line-height: 20px;
+        }
+        #footer1 .col-sm-3 li, #drops{
+            padding: 7px;
+            font-weight: 600;
+        }
+        #footer1 .col-sm-3:nth-child(1), #drops{
+            color: white;
+        }
+        #footer1 .col-sm-3:nth-child(2), #footer2{
+            color: gray;
+        }
         #home .btn-defaulf{
             color:black
+        }
+        #home .col-sm-4 .box{
+            height: 650px;
         }
         .container .col-sm-3 .box{
             height: 200px;
@@ -197,23 +241,11 @@
         #btn-btn{
             background: white;
             position: absolute;
-            bottom: 50px0px;
+            bottom: 40px;
             border: 1px solid black;
-            padding: 15px;
+            padding: 10px;
             color: black;
-        }
-        #news .col-sm-6 .box{
-            padding: 30px;
-            color: white;
-        }
-        #news .col-sm-6 .box h4{
-            font-size: x-large;
-        }
-        #news .col-sm-6 .box h5{
-            font-size: large;
-        }
-        #news .text-center{
-            margin-bottom: 40px;
+
         }
         #footer1{
             background: #05141F;
@@ -229,21 +261,55 @@
             display: inline-block;
             padding: 10px;
         }
+        #footer1 .col-sm-12 {
+            padding-top: 30px;
+        }
         #footer2{
             background: #010E18;
         }
-        #footer2 .col-sm-6{
-            float: right;
+        #footers ul li{
+            float: left;
+            padding: 20px;
         }
         #collapse{
             display: none;
         }
+        #drops{
+            position: relative;
+            text-align: left;
+            top: 180px;
+            left: 200px;
+            color: white;
+            text-align: center;
+        }
+        #drops .dropup .btn{
+            color: white;
+            background: black;
+            border: black;
+            border-radius: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 60px;
+            border: 1px solid black;
+            margin: px;
+        }
+        #drops #korea{
+            float: left;
+            margin-right: 200px;
+        }
         @media screen and (max-width: 767px){
             #myCarousel .carousel-inner .item img:nth-child(1){display: none;}
             #myCarousel .carousel-inner .item img:nth-child(2){display: block;}
+            #home .col-sm-4 .box{
+                height: auto;
+            }
+            #etc .box{
+                margin-top: -100px;
+            }
             #news .col-sm-6{
                 height: 250px;
                 padding: 0;
+                width: 100%;
             }
             #news .col-sm-6:nth-child(1){
                 height: 250px;
@@ -253,10 +319,16 @@
             }
             #news .col-sm-6 img{
                 width: 100% !important;
+                height: auto;
+                position: absolute;
+                bottom: -190px;
             }
             #news .col-sm-4{
                 padding: 30px;
                 padding-bottom: 30px;
+            }
+            #news .col-sm-6 .box p{
+                display: none;
             }
             #footer1 .col-sm-6{
                 display: none;
@@ -410,28 +482,28 @@
                                     <span class="badge">Top 1</span>
                                 </dt></h4>
                                 <div>EV 전기차 | 롱레인지 GT-line 4WD A/T</div>
-                                <img src="img/kar01.png" alt="The new EV6" width="90%">
-                                <div class="row">
-                                    <div class="col-sm-4"><dt>출시일</dt></div>
-                                    <div class="col-sm-8">2024-05-14</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4"><dt>배터리 용량</dt></div>
-                                    <div class="col-sm-8">84 kWh</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4"><dt><dt>최고출력</dt></dt></div>
-                                    <div class="col-sm-8">239 kW / 325 ps</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4"><dt>외장 컬러</dt></div>
-                                    <div class="col-sm-8">요트 매트 블루</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4"><dt>옵션 (6)</dt></div>
-                                    <div class="col-sm-8">스웨이드 컬렉션<br>
-                                    빌트인 캠2<br>
-                                    메리디안 프리미엄 사운드 등
+                                    <img src="img/kar01.png" alt="The new EV6" width="90%">
+                                    <div class="row">
+                                        <div class="col-sm-4"><dt>출시일</dt></div>
+                                        <div class="col-sm-8">2024-05-14</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4"><dt>배터리 용량</dt></div>
+                                        <div class="col-sm-8">84 kWh</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4"><dt><dt>최고출력</dt></dt></div>
+                                        <div class="col-sm-8">239 kW / 325 ps</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4"><dt>외장 컬러</dt></div>
+                                        <div class="col-sm-8">요트 매트 블루</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4"><dt>옵션 (6)</dt></div>
+                                        <div class="col-sm-8">스웨이드 컬렉션<br>
+                                        빌트인 캠2<br>
+                                        메리디안 프리미엄 사운드 등
                                     </div>
                                 </div>
                                 <hr>
@@ -515,6 +587,7 @@
                                     <div class="col-sm-4"><dt>옵션 (2)</dt></div>
                                     <div class="col-sm-8">빌트인 캠<br>
                                     와이드 선루프<br>
+                                    <div>.</div>
                                     </div>
                                 </div>
                                 <hr>
@@ -534,7 +607,7 @@
                         ※ 차량의 출시일 기준이며 차량별 사양 구성은 최다 판매 기준입니다.
                     </div>
                 </div>
-
+<!------------------------연비효율--------------------->
                 <div id="menu1" class="tab-pane fade">
                     <h2>Chandler Bing, Guitarist</h2>
                     <p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
@@ -593,9 +666,9 @@
                         </div>
                     </a>
                 </div>
-                </div>
             </div>
         </div>
+    </div>
 
 <!----------------------news------------------------->
 <div id="news" class="container">
@@ -617,15 +690,15 @@
     
     <div class="row">
         <div class="col-sm-4">
-                <h4>뉴스</h4>
+                <h4><bt>뉴스</bt></h4>
                 <p>기아, 제11회 스킬 월드컵 성료</p>
         </div>
         <div class="col-sm-4">
-            <h4>뉴스</h4>
+            <h4><bt>뉴스</bt></h4>
             <p>기아, '더 기아 EV3' 세계 최초 공개</p>
         </div>
         <div class="col-sm-4">
-            <h4>공지</h4>
+            <h4><bt>공지</bt></h4>
             <p>개인정보 처리방침 변경 안내 (2024.05.31)</p>
         </div>
     </div>
@@ -647,7 +720,10 @@
                 <li>구매 상담 신청</li>
                 <li>시승 신청</li>
                 <li>기아렌터카</li>
-                <li>홈</li>
+                <li>
+                    <img src="img/icon_home_1.svg">
+                    홈
+                </li>
             </ul>
         </div>
         <div class="col-sm-3">
@@ -678,8 +754,11 @@
                 </li>
             </ul>
 
-            <div>
-                <div>한국</div>
+            <div id="drops">
+                <div id="korea">
+                    <img src="img/global_footer_kor.svg">
+                    한국
+                </div>
                 <div class="dropup">
                     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Family site
                     <span class="caret"></span></button>
@@ -696,7 +775,6 @@
     </div>
 </div>
 <div id="footer2" class="container-fluid">
-    <div class="container">
         <!---------------------collapsible-------------------->
         <div id="collapse">
             <button class="collapsible">SNS</button>
@@ -745,6 +823,11 @@
         <!-----------------collapsible end------------------>
         <div class="row">
             <div class="col-sm-6">
+                <div>
+                    &copy; Kia cop. All rights reserved.
+                </div>
+            </div>
+            <div id="footers" class="col-sm-6">
                 <ul>
                     <li>개인정보 처리방침</li>
                     <li>프라이버시 센터</li>
@@ -754,52 +837,64 @@
                     <li>사이트맵</li>
                 </ul>
             </div>
-            <div class="col-sm-6">
-                <div>
-                    &copy; Kia cop. All rights reserved.
-                </div>
-            </div>
         </div>
 
         <div class="row">
             <div class="col-sm-2">
                 <ul>
-                    <li>23년 국가고객만족도(NCSI)</li>
+                    <li>
+                        <img src="img/kiaicon1.png">
+                        23년 국가고객만족도(NCSI)
+                    </li>
                     <li>경형승용(9년연속), 중형승용(4년연속)</li>
                     <li>컴팩트RV, 대형RV 1위</li>
                 </ul>
             </div>
             <div class="col-sm-2">
                 <ul>
-                    <li>24년 한국 산업의 서비스 품질지수</li>
+                    <li>
+                        <img src="img/kiaicon2.png">
+                        24년 한국 산업의 서비스 품질지수
+                    </li>
                     <li>우수 콜센터 선정(21년 연속)</li>
                 </ul>
             </div>
             <div class="col-sm-2">
                 <ul>
-                    <li>22년 한국산업의 서비스 품질지수</li>
+                    <li>
+                        <img src="img/kiaicon3.png">
+                        22년 한국산업의 서비스 품질지수
+                    </li>
                     <li>자동차 A/S부문 1위 (9년 연속)</li>
                 </ul>
             </div>
             <div class="col-sm-2">
                 <ul>
-                    <li>24년 대한민국 국가브랜드 대상</li>
+                    <li>
+                        <img src="img/kiaicon4.png">
+                        24년 대한민국 국가브랜드 대상
+                    </li>
                     <li>자동차 멤버십 부문 1위(13년 연속)</li>
                 </ul>
             </div>
             <div class="col-sm-2">
                 <ul>
-                    <li>23년 한국서비스품질지수(KS-SQ)</li>
+                    <li>
+                        <img src="img/kiaicon5.png">
+                        23년 한국서비스품질지수(KS-SQ)
+                    </li>
                     <li>자동차 판매서비스 부문 1위(4년연속)</li>
                 </ul>
             </div>
             <div class="col-sm-2">
                 <ul>
-                    <li>웬 접근성 품질인증</li>
+                    <li>
+                        <img src="img/kiaicon6.png">
+                        웬 접근성 품질인증
+                    </li>
                 </ul>
             </div>
         </div>
-    </div>
 </div>
 </body>
 </html>
