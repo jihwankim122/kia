@@ -18,6 +18,9 @@
   font-size: 11px !important;
   letter-spacing: 4px;
 }
+.navbar-fixed-top{
+    position: absolute;
+}
 
 /* Add a gray color to all navbar links */
 .navbar li a, .navbar .navbar-brand {
@@ -84,6 +87,11 @@
         #bestkia .nav-tabs{
             margin-bottom: 50px;
         }
+        #bestkia #navs{
+            display: flex;
+            justify-content:center;
+            width: 100%;
+        }
         #bestkia .nav-tabs li.active a{
             border: none;
             border-radius: 0;
@@ -124,6 +132,8 @@
             margin: 10px;
         }
         #bestkia .btn-box{
+            display: flex;
+            justify-content: center;
             text-align: center;
             padding: 0px;
             position: relative;
@@ -195,7 +205,8 @@
             font-size: large;
         }
         #news .text-center{
-            margin-bottom: 40px;
+            margin-bottom: 70px;
+            margin-top: -70px;
         }
         #etc .box:hover img:nth-child(2){
             display: inline;
@@ -267,6 +278,12 @@
         #footer2{
             background: #010E18;
         }
+        #footer2 #collapse button{
+            background: #05141F;
+        }
+        #footer2 #collapse{
+            margin-top: -30px;
+        }
         #footers ul li{
             float: left;
             padding: 20px;
@@ -336,6 +353,15 @@
             #footer1 .col-sm-3:nth-child(2){
                 display: none;
             }
+            #footer2 .container .row:nth-of-type(3){
+                display: none;
+            }
+            #footer2 .col-sm-2{
+                display: none;
+            }
+            #footer2 .col-sm-6{
+                text-align: center;
+            }
             #collapse{
                 display: block;
             }
@@ -354,7 +380,6 @@
             #collapse .active, #collapse .collapsible:hover {
                 background-color: #555;
             }
-
             #collapse .collapsible:after {
                 content: '\002B';
                 color: white;
@@ -362,11 +387,9 @@
                 float: right;
                 margin-left: 5px;
             }
-
             #collapse .active:after {
             content: "\2212";
             }
-
             #collapse .content {
                 padding: 0 18px;
                 max-height: 0;
@@ -374,10 +397,7 @@
                 transition: max-height 0.2s ease-out;
                 background-color: #f1f1f1;
             }
-            #footer2 .container .row:nth-of-type(3){
-                display: none;
-            }
-         }
+        }
     </style>
 </head>
 <body>
@@ -466,12 +486,14 @@
 <!------------------best kia------------------------>
     <div id="bestkia" class="container">
         <h3 class="text-center">Best KIA</h3>
+        <div id="navs">
             <ul class="nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#home">최근 출시</a></li>
                 <li><a data-toggle="tab" href="#menu1">연비 효율</a></li>
                 <li><a data-toggle="tab" href="#menu2">적재 공간</a></li>
                 <li><a data-toggle="tab" href="#menu3">안전성</a></li>
             </ul> 
+        </div>
             <div class="tab-content">
 <!-----------------------최근 출시---------------------------->
                 <div id="home" class="tab-pane fade in active">
